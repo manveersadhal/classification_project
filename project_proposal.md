@@ -4,13 +4,13 @@
 #### Oct 20, 2021
 
 ## Need
-Interested Lending, Inc. is a peer-to-peer lending platform. In order for users to accurately judge the risk of borrower default, Interested Lending has requested that a model be developed.
+Interested Lending, Inc. is a small credit union. In order to help quantify the risk of current loans going into default, Interested Lending has hired an outside firm to develop a classification model.
 
-The question this classification project intends to answer is whether a given borrower will default based on the information they submitted with their loan application. Lenders will benefit since they will not lose money when a borrower defaults. Interested Lending, Inc. will also benefit from increased lender confidence on their platform.
+The question this classification project intends to answer is whether a given borrower will default based on the information they submitted with their loan application as well as information about the loan to date.
 
 ## Data Description
 ### Data
-The primary source of data will be from the Kaggle.com ["Credit Risk Analysis" data set](https://www.kaggle.com/ranadeep/credit-risk-dataset). The data will be downloaded as a CSV file.
+The primary source of data will be the Kaggle.com ["Credit Risk Analysis" data set](https://www.kaggle.com/ranadeep/credit-risk-dataset). The data will be downloaded as a CSV file. The dataset contains approximately 887,000 records.
 
 An individual sample will be a record of a single loan.
 
