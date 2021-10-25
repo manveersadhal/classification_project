@@ -103,8 +103,9 @@ If a borrower defaults on a loan, the lender will collect interest for some time
 Accuracy is not being used as a metric due to the class imbalance in the target.
 
 ### Next Steps
-1. Address class imbalance (target class represents 17% of the total data) and compare models again.
-2. Fit and evaluate XGBoost model.
-3. Downselect model.
-4. Tune model to maximize profit for lender.
-5. Pickle final model and deploy in Streamlit app.
+1. Re-evaluate features originally discarded and consider if they may improve model scores.
+2. Address class imbalance (target class represents 17% of the total data) and compare models again.
+3. Fit and evaluate XGBoost model.
+4. Downselect model.
+5. Tune model to maximize profit for lender.
+6. Retrain model on entire data set of closed loans. Pickle final model and deploy in Streamlit app.
