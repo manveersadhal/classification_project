@@ -13,7 +13,7 @@ Accurate assessment of credit default risk is a vital component in lender operat
 ## Data
 A data set containing a snapshot of approximately 887,000 loans was used to develop the classification model. Only loans which had closed (whether by repayment or default) were considered. After cleaning, approximately 250,000 loans remained for model development.
 
-The original data set contained 73 columns. A smaller data set with 19 columns was created.
+The original data set contained 73 columns. A smaller data set with 19 columns was created after removing features which were irrelevant, would introduce leakage from the target, or contained a high proportion of null values.
 
 ## Algorithms
 ### Feature Engineering
