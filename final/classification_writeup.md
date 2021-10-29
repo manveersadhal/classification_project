@@ -30,7 +30,7 @@ The remaining data set was split into training and validation sets so that preci
 
 SciKit-Learn's RandomizedSearchCV was used to evaluate a wide range of parameters (regularization strength, max iterations, penalty). With the best parameters from the randomized search, the model was tuned further in a narrow range with GridSearchCV using five-fold cross-validation. The final model was created using the best parameters from the grid search, trained on the training + validation data splits, and scored on the test split.
 
-The metric optimized through the parameter search was f-beta (beta=2). Both recall and precision were considered important to the model, but recall was weighted more heavily since the lender has recourse in the case of default to recover the balance of the loan (e.g. recovering the asset the loan was made against). The benefit of identifying more possible loans that could default was given priority over precision.
+The metric optimized through the parameter search was f-beta (beta=2). Both recall and precision were considered important to the model, but recall was weighted more heavily since it would allow the lender more opportunity to react to loans that may default at a low cost (e.g. reaching out to the borrower or evaluating the loan in a model specific to evaluating the cost/benefit of selling the loan to another institution). The benefit of identifying more possible loans that could default was given priority over precision.
 
 The final f-beta score obtained during cross-validation was 0.523. The f-beta score on the test split was 0.520.
 
